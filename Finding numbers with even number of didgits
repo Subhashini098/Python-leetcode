@@ -1,0 +1,11 @@
+# Find Numbers with even number of digits
+class Solution:
+    def findNumbers(self, nums):
+        count = 0
+        for i in nums:
+            if len(str(i)) % 2 == 0:
+                count += 1
+        return count
+
+arr=[12,121,3,1222331,9,212121,9999999999]
+print(Solution().findNumbers(arr))

@@ -1,0 +1,10 @@
+class Solution:
+    def duplicateZeros(self, arr)->bool:
+            if len(arr) == len(set(arr)):
+                return True
+            else:
+                return False
+
+
+arr=[-4,0,23,6,7,6]
+print(Solution().duplicateZeros(arr))

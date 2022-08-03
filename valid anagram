@@ -1,0 +1,13 @@
+class Solution:
+    def duplicateZeros(self, arr,arr2)->bool:
+
+        if sorted(arr)== sorted(arr2):
+
+                return True
+        else:
+                return False
+
+
+arr='anagram'
+arr2='nagarmat'
+print(Solution().duplicateZeros(arr,arr2))

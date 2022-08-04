@@ -1,0 +1,29 @@
+Ideal solution
+Time complexity:o(n)
+Space complexity:o(n)
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        prevMap = {}  # val -> index
+
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in prevMap:
+                return [prevMap[diff], i]
+            prevMap[n] = i
+            ********************************
+            Second solution
+            Time complexity:o(n2)
+            Space complexity:o(1)
+            class Solution:
+    def duplicateZeros(self, arr,arr2):
+        ans=[]
+        for i in arr:
+            if i < arr2:
+                k=arr2 - i
+                if k in arr:
+                    ans.append(arr.index(i))
+                    ans.append(arr.index(k))
+                    return ans
+                else:
+                    return
+                    

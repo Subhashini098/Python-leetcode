@@ -26,4 +26,7 @@ class Solution:
                     return ans
                 else:
                     return
+    a=[1,2,3,5]
+    tar=5
+    print(Solution().duplicateZeros(a,tar))
                     

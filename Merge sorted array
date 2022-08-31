@@ -1,0 +1,29 @@
+class Solution:
+    def merge(self, arr1,m,arr2,n):
+        last=m+n-1
+        while m>0 and n>0:
+            if arr1[m-1]>arr2[n-1]:
+                arr1[last]=arr1[m-1]
+                m-=1
+
+            else:
+                arr1[last]=arr2[n-1]
+                n-=1
+            last-=1
+
+        while n>0:
+            arr1[last]=arr2[n-1]
+            n-=1
+            last-=1
+        return arr1
+
+
+
+
+s = [1,2,3,0,0,0]
+r=[2,5,6]
+m=3
+n=3
+print(Solution().merge(s,m,r,n))
+#Mem=o(n)
+#space=o(1)

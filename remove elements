@@ -1,0 +1,12 @@
+class Solution:
+    def removeElements(self,arr,val):
+        k=0
+        for i in range(len(arr)):
+            if arr[i]!=val:
+                arr[k]=arr[i]
+                k+=1
+        return k
+
+s = [3,1,4,2,9,2,3,4,2]
+val=2
+print(Solution().removeElements(s,val))

@@ -1,0 +1,11 @@
+class Solution:
+    def shuffle(self, nums,n):
+            result = []
+            for i in range(n):
+                result += [nums[i], nums[i + n]]
+            return result
+
+
+ar=[1,2,3,4,5,6,]
+n=3
+print(Solution().shuffle(ar,n))

@@ -1,0 +1,12 @@
+class Solution:
+    def createTargetArray(self, nums, index):
+        ans = []
+
+        for i in range(len(nums)):
+            ans.insert(index[i],nums[i])
+            print(index)
+        return ans
+
+a=[0,1,2,3,4]
+n=[0,1,2,2,1]
+print(Solution().createTargetArray(a,n))
